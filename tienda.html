@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café Bonfil</title>
+  <link rel="stylesheet" href="Stile.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Café Bonfil</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="carrito-btn" onclick="toggleCarrito()">🛒 Carrito: <span id="carrito-contador">0</span></div>
+
+  <section id="hero">
+    <h1>Bienvenido a Café Bonfil</h1>
+    <p>Disfruta del aroma, sabor y calidez en cada taza.</p>
+    <a href="#menu" class="cta-button">Ver menú</a>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>En Café Bonfil servimos más que café. Somos un espacio acogedor donde cada taza cuenta una historia, hecha con pasión por baristas locales.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Nuestro Menú</h2>
+    <div class="productos" id="productos-container"></div>
+  </section>
+
+  <div id="carrito-modal">
+    <h3>Tu Orden</h3>
+    <ul id="carrito-lista"></ul>
+    <div class="total">Total: $<span id="total-compra">0.00</span></div>
+  </div>
+
+  <section>
+    <h2>Testimonios</h2>
+    <blockquote>“Un café delicioso y un ambiente increíble. ¡Lo mejor de Amealco!” – Diego R.</blockquote>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="contacto">
+      <p>📍 Dirección: Calle Hidalgo #42, Amealco De Bonfil, Querétaro</p>
+      <p>📞 Teléfono: +52 448 123 4567</p>
+      <p>📷 Instagram: <a href="https://www.instagram.com/cafe.bonfil" target="_blank">@cafe.bonfil</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café Bonfil. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
